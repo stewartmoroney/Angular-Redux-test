@@ -9,14 +9,13 @@ import { Observable } from 'rxjs';
 })
 export class TickComponent implements OnInit {
   @select() tick$: Observable<number>;
+  tick?;
 
   constructor() {
     this.tick$.subscribe((tick) => {
       this.tick = tick;
     });
   }
-
-  tick = 0;
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   ngOnInit(): void {}
