@@ -8,9 +8,8 @@ describe('TickComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TickComponent ]
-    })
-    .compileComponents();
+      declarations: [TickComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

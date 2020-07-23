@@ -1,7 +1,11 @@
-export const TICK_ACTION =  "TICK";
+import { Action } from 'redux';
 
-export const newTick = () => {
-    return {
-        type: TICK_ACTION
-    }
+import { ActionTypes } from './../actions';
+
+export interface TickAction extends Action {
+  type: ActionTypes.TICK_ACTION;
 }
+
+export const newTick = (): TickAction => ({
+  type: ActionTypes.TICK_ACTION,
+});
